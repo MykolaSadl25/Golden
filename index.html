@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,75 +24,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="./index.html">Golden</a>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+    <header class="header">
+        <div class="container header-box">
+            <a class="header-logo" href="./index.html">Golden</a>
+        <nav class="header-navigation">
+            <ul class="header-list">
+                <li class="header-item"><a class="header-link" href="#">Home</a></li>
+                <li class="header-item"><a class="header-link" href="#">Services</a></li>
+                <li class="header-item"><a class="header-link" href="#">Portfolio</a></li>
+                <li class="header-item"><a class="header-link" href="#">About</a></li>
+                <li class="header-item"><a class="header-link" href="#">Contact</a></li>
             </ul>
         </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section class="services">
             <div class="container">
-                <h1>Services</h1>
-            <ul>
-                <li>
+                <h1 class="services-title">Services</h1>
+            <ul class="services-items">
+                <li class="services-elem">
                     <svg class="services-icon">
                         <use href="./img/golden.svg#icon-basket"></use>
                     </svg>
+                    <h2 class="services-name">E-Commerce</h2>
+                    <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
-                <li>
+                <li class="services-elem">
                     <svg class="services-icon">
                         <use href="./img/golden.svg#icon-computer"></use>
                     </svg>
+                    <h2 class="services-name">Responsive Web</h2>
+                    <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
-                <li>
+                <li class="services-elem">
                     <svg class="services-icon">
                         <use href="./img/golden.svg#icon-lock"></use>
                     </svg>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h2>E-Commerce</h2>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </li>
-                <li>
-                    <h2>Responsive Web</h2>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </li>
-                <li>
-                    <h2>Web Security</h2>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    <h2 class="services-name">Web Security</h2>
+                    <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
             </ul>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <h2>Contact us</h2>
-        <form>
-            <div>
+            <h2 class="footer-title">Contact us</h2>
+        <form class="footer-form">
+            <div class="footer-name">
                 <input type="text" id="name" placeholder="your Name *">
             </div>
-            <div>
+            <div class="footer-email">
                 <input type="text" id="email" placeholder="your e-mail *">
             </div>
-            <div>
+            <div class="footer-subject">
                 <input type="text" id="subject" placeholder="subject">
             </div>
-            <div>
+            <div class="footer-comment">
                 <input type="text" id="comment" placeholder="Your message *">
             </div>
-            <button type="button">Send Message</button>
+            <button class="footer-btn" type="button">Send Message</button>
         </form>
         </div>
     </footer>
