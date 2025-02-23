@@ -1,0 +1,20 @@
+:root{
+    --logo-color:#FED136;
+    --title-color:#222222;
+    --text-color:#777777;
+    --contact-color:#FFFFFF;
+    --footer-bcg:#222222;
+    --form-bcg:#FFFFFF;
+    --form-border:#CCCCCC;
+    --form-text:#BBBBBB;
+    --icon-color:#FED136;
+}
+
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid 2px black;
+}
